@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: linear-gradient(315deg, #fff 0%, #ede4eb 74%);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/*CIRCULO INTEIRO*/
+.caixa .botao{
+    display: block; /*DEIXA UM DO LADO DO OUTRO*/
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    float: left; /*FLUTUANDO A DIREITA*/
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /*CASO TENHA ALGO QUE SEJA MAIOR QUE A CAIXA ELE ESCONDE*/
+    cursor: pointer; /*MUDANDO O TIPO DO CURSOR (MÃOZINHA)*/
+    transition: all 0.3s ease-out; /*PARTE DA CONFIGURAÇÃO DA TRâNSIÇÃO*/
+}
+
+/*CIRCULO QUE TEM O ICON */
+.caixa .botao .icone{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px; /*ISSO É PARA ARRUMAR O TAMANHO DA ALTURA DA LINHA PARA QUE AS LETRAS SE ENCAIXEM BEM*/
+    transition: all 0.3s ease-out;
+}
+
+.caixa .botao:hover{
+    color: #fff;
+    width: 200px;
+}
+
+/*COLOCANDO A COR DOS DESENHOS*/
+.caixa .botao:nth-child(1):hover .icone{ /*NTH */
+    background: darkblue;
+}
+
+.caixa .botao:nth-child(2):hover .icone{ /*NTH */
+    background: red;
+}
+
+.caixa .botao:nth-child(3):hover .icone{ /*NTH */
+    background: dodgerblue;
+}
+
+.caixa .botao:nth-child(4):hover .icone{ /*NTH */
+    background: green;
+}
+
+.caixa .botao:nth-child(5):hover .icone{ /*NTH */
+    background: blue;
+}
+
+.caixa .botao:nth-child(6):hover .icone{ /*NTH */
+    background: black;
+}
+
+/*ICONES*/
+.caixa .botao .icone i{
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 60px;
+    display: flex;
+    justify-content: center; /*COLCOANDO OS ICONS NO CENTRO NA BOLINHA*/
+}
+
+/*COLOCANDO COR NAS LETRAS*/
+.caixa .botao:nth-child(1):hover span{ /*NTH */
+    color: darkblue;
+}
+
+.caixa .botao:nth-child(2):hover span{ /*NTH */
+    color: red;
+}
+
+.caixa .botao:nth-child(3):hover span{ /*NTH */
+    color: dodgerblue;
+}
+
+.caixa .botao:nth-child(4):hover span{ /*NTH */
+    color: green;
+}
+
+.caixa .botao:nth-child(5):hover span{ /*NTH */
+    color: blue;
+}
+
+.caixa .botao:nth-child(6):hover span{ /*NTH */
+    color: black;
+}
